@@ -1,14 +1,22 @@
+
+
 body {
     margin: 200px;
 }
 
-section {
+.section-pai {
     display: flex;
     align-items: center;
+    justify-content: center;
     justify-content: space-around;
+    border: rgb(7, 62, 94) 5px solid;
+    border-radius: 15px;
+    background-color: rgb(115, 245, 245);
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-#div-start, #div-end, #div-offset {
+.div-start, .div-end, .div-offset {
     display: flex; 
     flex-direction: column-reverse; 
     align-items: center;
@@ -17,7 +25,7 @@ section {
     height: 500px;
 }
 
-#div-um {
+.div-um {
     background-color: red;
     width: 120px;
     height: 60px;
@@ -25,7 +33,7 @@ section {
     border: 3px black solid;
 }
 
-#div-dois {
+.div-dois {
     background-color: orange;
     width: 180px;
     height: 60px;
@@ -33,7 +41,7 @@ section {
     border: 3px black solid;
 }
 
-#div-tres {
+.div-tres {
     background-color: yellow;
     width: 240px;
     height: 60px;
@@ -41,7 +49,7 @@ section {
     border: 3px black solid;
 }
 
-#div-quatro {
+.div-quatro {
     background-color: greenyellow;
     width: 300px;
     height: 60px;
@@ -55,10 +63,13 @@ section {
 }
 
 .div-vitoria{
-    width: 240px;
-    height: 40px;
+    width: 295px;
+    height: 78px;
     background-color: green;
     color: white;
     border-radius: 9px;
-    /* display: ; */
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+}  
