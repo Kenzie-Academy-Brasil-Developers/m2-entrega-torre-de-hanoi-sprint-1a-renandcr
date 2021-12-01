@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+body {
+
+    margin: 200px;
+    background-color: rgb(24, 138, 184);
+
+}
+.div-titulo{
+    font-family: "Acme";
+    background-color: rgb(173, 226, 213);
+    display: flex;
+    justify-content: center;
+    border: solid 5px rgb(7, 62, 94);
+    border-radius: 9px;
+    font-size: 22px;
+}
+
+.section-pai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    border: rgb(7, 62, 94) 5px solid;
+    border-radius: 15px;
+    background-color: rgb(173, 226, 213);
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url("assets/img/céu-nubladoNew3.jpg");
+}
+
+.div-start, .div-end, .div-offset {
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
+    background-color: rgb(3, 25, 51);
+    width: 20px;
+    height: 500px;
+}
+
+.div-um {
+    background-color: red;
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+    border: 3px black solid;
+}
+
+.div-dois {
+    background-color: orange;
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    border: 3px black solid;
+}
+
+.div-tres {
+    background-color: yellow;
+    width: 240px;
+    height: 60px;
+    border-radius: 10px;
+    border: 3px black solid;
+}
+
+.div-quatro {
+    background-color: greenyellow;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    border: 3px black solid;
+}
+
+.bloco {
+    cursor: pointer;
+
+}
+
+.div-vitoria{
+    font-family: "Acme";
+    width: 295px;
+    height: 78px;
+    background-color: green;
+    color: white;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+}  
