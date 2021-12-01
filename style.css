@@ -48,3 +48,7 @@ section {
     border-radius: 10px;
     border: 3px black solid;
 }
+
+.bloco {
+    cursor: pointer;
+}
