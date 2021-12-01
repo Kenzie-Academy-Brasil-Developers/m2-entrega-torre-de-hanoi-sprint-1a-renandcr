@@ -33,10 +33,6 @@ divStart.addEventListener("click", function(event){
     console.log(filho)
     const tamanho = primeiraDiv.clientWidth
 
-    if(filho > tamanho) {
-
-    }
-
     if(mao === undefined) {
         mao = event.currentTarget.lastElementChild
     }
@@ -76,7 +72,6 @@ divEnd.addEventListener("click", function(event){
         event.currentTarget.appendChild(mao)
         mao = undefined
     }
-
 })
 
 
