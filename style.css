@@ -51,4 +51,12 @@ section {
 
 .bloco {
     cursor: pointer;
+
+}
+
+.div-vitoria{
+    width: 240px;
+    height: 40px;
+    background-color: green;
+    color: white;
 }

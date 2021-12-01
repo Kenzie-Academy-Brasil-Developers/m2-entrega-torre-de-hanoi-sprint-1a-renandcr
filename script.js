@@ -2,7 +2,7 @@
 // clientWidth : dimensão em pixels do primeiro elemento
 // childElementCount : quantidade de elementos filhos
 
-// const sectionPai = document.getElementById("section-pai")
+const sectionPai = document.getElementById("section-pai")
 const divStart = document.getElementById("div-start")
 const divOffset = document.getElementById("div-offset")
 const divEnd = document.getElementById("div-end")
@@ -23,58 +23,68 @@ let terceiraDivQuantidade = divEnd.childElementCount
 
 let primeiraDiv = divStart.lastElementChild
 
-
 let mao = undefined
 
-divStart.addEventListener("click", function(event){ 
-    console.log(event.currentTarget)
 
+divStart.addEventListener("click", function(event){ 
     const filho = event.currentTarget.lastElementChild
-    console.log(filho)
     const tamanho = primeiraDiv.clientWidth
 
-    // if(filho > tamanho) {
-
-    // }       
     if(mao === undefined) {
         mao = event.currentTarget.lastElementChild
     }
-    else {
-        event.currentTarget.appendChild(mao)
+    else if(mao !== undefined && divStart.lastElementChild === null) {
+        divStart.appendChild(mao)
         mao = undefined
     }
+    else if(mao.clientWidth < divStart.lastElementChild.clientWidth){
+        divStart.appendChild(mao)
+        mao = undefined
+    } 
 })
+        
 
 divOffset.addEventListener("click", function(event){ 
-    console.log(event.currentTarget)
-
     const filho = event.currentTarget.lastElementChild
-    console.log(filho)
     const tamanho = primeiraDiv.clientWidth
-
 
     if(mao === undefined) {
         mao = event.currentTarget.lastElementChild
     }
-    else {
-        event.currentTarget.appendChild(mao)
+    else if(mao !== undefined && divOffset.lastElementChild === null) {
+        divOffset.appendChild(mao)
+        mao = undefined
+    }
+    else if(mao.clientWidth < divOffset.lastElementChild.clientWidth){
+        divOffset.appendChild(mao)
         mao = undefined
     }
 })
+
+
 
 divEnd.addEventListener("click", function(event){ 
-    console.log(event.currentTarget)
-
     const filho = event.currentTarget.lastElementChild
-    console.log(filho)
     const tamanho = primeiraDiv.clientWidth
 
     if(mao === undefined) {
         mao = event.currentTarget.lastElementChild
     }
-    else {
-        event.currentTarget.appendChild(mao)
+    else if(mao !== undefined && divEnd.lastElementChild === null) {
+        divEnd.appendChild(mao)
         mao = undefined
+    }
+    else if(mao.clientWidth < divEnd.lastElementChild.clientWidth){
+        divEnd.appendChild(mao)
+        mao = undefined
+    }
+    if(divEnd.childElementCount === 4){
+        // divEnd.appendChild(mao)
+
+        let divVitoria = document.createElement("div")
+        divVitoria.classList.add("div-vitoria")
+        sectionPai.appendChild(divVitoria)
+        divVitoria.innerText = "Parabéns, você venceu!"
     }
 })
 
@@ -92,6 +102,8 @@ divEnd.addEventListener("click", function(event){
 
 
 
+
+// event.currentTarget.appendChild(mao)
 
 
 
