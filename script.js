@@ -27,8 +27,8 @@ let mao = undefined
 
 
 divStart.addEventListener("click", function(event){ 
-    const filho = event.currentTarget.lastElementChild
-    const tamanho = primeiraDiv.clientWidth
+    // const filho = event.currentTarget.lastElementChild
+    // const tamanho = primeiraDiv.clientWidth
 
     if(mao === undefined) {
         mao = event.currentTarget.lastElementChild
@@ -40,13 +40,17 @@ divStart.addEventListener("click", function(event){
     else if(mao.clientWidth < divStart.lastElementChild.clientWidth){
         divStart.appendChild(mao)
         mao = undefined
-    } 
+    } else{
+        mao = undefined
+    }
+    console.log(mao, "offstart")
+
 })
         
 
 divOffset.addEventListener("click", function(event){ 
-    const filho = event.currentTarget.lastElementChild
-    const tamanho = primeiraDiv.clientWidth
+    // const filho = event.currentTarget.lastElementChild
+    // const tamanho = primeiraDiv.clientWidth
 
     if(mao === undefined) {
         mao = event.currentTarget.lastElementChild
@@ -58,14 +62,17 @@ divOffset.addEventListener("click", function(event){
     else if(mao.clientWidth < divOffset.lastElementChild.clientWidth){
         divOffset.appendChild(mao)
         mao = undefined
+    }else{
+        mao = undefined
     }
+    console.log(mao, "offset")
 })
 
 
 
 divEnd.addEventListener("click", function(event){ 
-    const filho = event.currentTarget.lastElementChild
-    const tamanho = primeiraDiv.clientWidth
+    // const filho = event.currentTarget.lastElementChild
+    // const tamanho = primeiraDiv.clientWidth
 
     if(mao === undefined) {
         mao = event.currentTarget.lastElementChild
@@ -77,9 +84,13 @@ divEnd.addEventListener("click", function(event){
     else if(mao.clientWidth < divEnd.lastElementChild.clientWidth){
         divEnd.appendChild(mao)
         mao = undefined
+    } else{
+        mao = undefined
     }
+    console.log(mao, "offend")
+
     if(divEnd.childElementCount === 4){
-        // divEnd.appendChild(mao)
+        /// divEnd.appendChild(mao)
 
         let divVitoria = document.createElement("div")
         divVitoria.classList.add("div-vitoria")
