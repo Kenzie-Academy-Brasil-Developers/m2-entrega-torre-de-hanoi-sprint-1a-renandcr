@@ -5,6 +5,35 @@ body {
     background-color: rgb(24, 138, 184);
 
 }
+.img-botao{
+    width: 100%;
+    
+}
+.div-botao{
+    width: 50px;
+    box-shadow: rgb(145, 7, 7) 3px 3px 3px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    position: relative;
+    top: 60px;
+    left: 10px;
+}
+
+/* :hover */
+.div-botao:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+.div-botao:active {
+    box-shadow: none;
+}
+.bloco:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
 .div-titulo{
     font-family: "Acme";
     background-color: rgb(173, 226, 213);
@@ -13,6 +42,7 @@ body {
     border: solid 5px rgb(7, 62, 94);
     border-radius: 9px;
     font-size: 22px;
+    margin-bottom: -57px;
 }
 
 .section-pai {
@@ -33,8 +63,10 @@ body {
     flex-direction: column-reverse; 
     align-items: center;
     background-color: rgb(3, 25, 51);
-    width: 20px;
+    width: 35px;
     height: 500px;
+    cursor: pointer;
+
 }
 
 .div-um {
@@ -69,20 +101,38 @@ body {
     border: 3px black solid;
 }
 
-.bloco {
-    cursor: pointer;
-
-}
-
 .div-vitoria{
     font-family: "Acme";
-    width: 295px;
-    height: 78px;
+    width: 350px;
+    height: 90px;
     background-color: green;
     color: white;
     border-radius: 9px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 27px;
-}  
+    font-size: 35px;
+    position: relative;
+    bottom: 350px;
+    left: 230px;
+}
+
+.div-alert{
+    font-family: "Acme";
+    width: 200px;
+    height: 40px;
+    background-color: rgb(212, 22, 22);
+    color: white;
+    border-radius: 40px 5px 5px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    position: relative;
+    bottom: 581px;
+    left: 84px;
+}
+
+.img-dedo{
+    width: 50px;
+}
