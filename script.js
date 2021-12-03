@@ -58,7 +58,7 @@ imgDedo.src = "assets/img/dedo-apontado.png"
 divAlert.appendChild(imgDedo)
 
 const paragrafo = document.createElement("p")
-paragrafo.innerText = "Jogue denovo!"
+paragrafo.innerText = "Jogue de novo!"
 divAlert.appendChild(paragrafo)
 divAlert.style.display = "none"
 
